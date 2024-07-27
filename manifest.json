@@ -1,0 +1,42 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icon.png",
+         "16": "icon.png",
+         "48": "icon.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Generate Image with CloudflareAI"
+   },
+   "name": "__MSG_appName__",
+   "description": "__MSG_appDesc__",
+   "default_locale": "en",
+   "background": {
+      "service_worker": "background.js"
+   },
+   "host_permissions": [
+      "https://api.cloudflare.com/*"
+   ],
+   "icons": {
+      "128": "icon.png",
+      "16": "icon.png",
+      "48": "icon.png"
+   },
+   "manifest_version": 3,
+   "permissions": [
+      "contextMenus",
+      "storage"
+   ],
+   "version": "1.0.1",
+   "web_accessible_resources": [
+      {
+         "matches": [
+            "https://*/*",
+            "http://*/*"
+         ],
+         "resources": [
+            "icon.png"
+         ]
+      }
+   ]
+}

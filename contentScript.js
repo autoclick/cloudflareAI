@@ -1,0 +1,1 @@
+chrome.runtime.sendMessage("I am loading content script",(function(o){console.log(o),console.log("I am content script")})),window.onload=function(o){console.log("page is fully loaded")};
